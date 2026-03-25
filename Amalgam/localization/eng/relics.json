@@ -27,8 +27,9 @@
     "AMALGAM-TINY_HATCHET.description": "",
     "AMALGAM-TINY_HATCHET.flavor": "",
     "AMALGAM-TUNGSTEN_PAPERWEIGHT.title": "Tungsten Paperweight",
-    "AMALGAM-TUNGSTEN_PAPERWEIGHT.description": "",
+    "AMALGAM-TUNGSTEN_PAPERWEIGHT.description": "Upon pickup, choose [blue]2[/blue] of [blue]20[/blue] Colorless cards to add to your [gold]Deck[/gold].",
     "AMALGAM-TUNGSTEN_PAPERWEIGHT.flavor": "",
+    "AMALGAM-TUNGSTEN_PAPERWEIGHT.selectionScreenPrompt": "Choose [blue]2[/blue] Colorless Cards to Add to Your [gold]Deck[/gold].",
     "AMALGAM-WORN_CLEAVER.title": "Worn Cleaver",
     "AMALGAM-WORN_CLEAVER.description": "",
     "AMALGAM-WORN_CLEAVER.flavor": ""
