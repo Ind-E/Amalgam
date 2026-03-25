@@ -25,7 +25,8 @@
   "AMALGAM-OMINOUS_RING.flavor": "",
 
   "AMALGAM-PARASITIC_SHRYMP.title": "Parasitic Shrymp",
-  "AMALGAM-PARASITIC_SHRYMP.description": "",
+  "AMALGAM-PARASITIC_SHRYMP.description": "Upon pickup, [gold]Enchant[/gold] a card with [purple]Imbued[/purple] and add [blue]2[/blue] [red]Parasites[/red] to your [gold]Deck[/gold].",
+  "AMALGAM-PARASITIC_SHRYMP.eventDescription": "[gold]Enchant[/gold] a card with [purple]Imbued[/purple] and add [blue]2[/blue] [red]Parasites[/red] to your [gold]Deck[/gold].",
   "AMALGAM-PARASITIC_SHRYMP.flavor": "",
 
   "AMALGAM-SAND_PILE.title": "Sand Pile",
