@@ -1,0 +1,7 @@
+{
+  "OPTION_AMALGAM-SCATTER.name": "Scatter",
+  "OPTION_AMALGAM-SCATTER.description": "[gold]Remove[/gold] all cards enchanted with [gold]{EnchantmentName}[/gold].",
+
+  "OPTION_AMALGAM-COLLECT.name": "Collect",
+  "OPTION_AMALGAM-COLLECT.description": "[gold]Upgrade[/gold] all cards enchanted with [gold]{EnchantmentName}[/gold]."
+}

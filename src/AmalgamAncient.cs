@@ -10,7 +10,8 @@ namespace Amalgam;
 public class Ancient : CustomAncientModel
 {
     public override string CustomMapIconPath => "res://Amalgam/map/ancient_node_amalgam.png";
-    public override string CustomMapIconOutlinePath => "res://Amalgam/map/ancient_node_amalgam_outline.png";
+    public override string CustomMapIconOutlinePath =>
+        "res://Amalgam/map/ancient_node_amalgam_outline.png";
 
     public override bool IsValidForAct(ActModel act) => act.ActNumber() == 2;
 
@@ -52,12 +53,12 @@ public class Ancient : CustomAncientModel
     {
         List<EventOption> options = [TungstenPaperweightOption];
 
-        if (Rng.NextBool())
-            options.Add(ParasiticShrympOption);
-        else
-            options.Add(SandPileOption);
-
         IReadOnlyList<CardModel> cards = Owner!.Deck.Cards;
+        if (Rng.NextBool() && SandPile.CanSpawn(cards))
+            options.Add(SandPileOption);
+        else
+            options.Add(ParasiticShrympOption);
+
         if (Rng.NextBool() && cards.Count(c => c.IsRemovable) >= 4)
             options.Add(FakePaelsToothOption);
         else
