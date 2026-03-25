@@ -1,0 +1,57 @@
+{
+    "AMALGAM-ANCIENT.title": "Amalgam",
+    "AMALGAM-ANCIENT.epithet": "???",
+    "AMALGAM-ANCIENT.talk.firstVisitEver.0-0.ancient": "👀",
+
+    "AMALGAM-ANCIENT.talk.ANY.0-0r.ancient": "[sine]...hello, sweetie... awaken your madness...[/sine]",
+    "AMALGAM-ANCIENT.talk.ANY.1-0r.ancient": "[thinky_dots]Come closer, friend. Let my flesh and fire grow stronger with you...[/thinky_dots]",
+    "AMALGAM-ANCIENT.talk.ANY.2-0r.ancient": "GROW STRONGER!! Try this!!! Weapons, blessings, snoring… all for you!!",
+    "AMALGAM-ANCIENT.talk.ANY.3-0r.ancient": "Do come in… very good finds!! Let me burn away your flaws while shaking the room.",
+
+    "AMALGAM-ANCIENT.talk.DEFECT.0-0.ancient": "[sine]...construct...[/sine] WHY NOT AT FACTORY?? [thinky_dots]I will fix your...[/thinky_dots] [jitter][b]errors[/b][/jitter]...",
+    "AMALGAM-ANCIENT.talk.DEFECT.1-0r.ancient": "SHINY ORBS!! [sine]...he.. can...\n....fix.. you..[/sine] [thinky_dots]do constructs dream of...[/thinky_dots] [jitter][b]fire[/b][/jitter]?",
+    "AMALGAM-ANCIENT.talk.DEFECT.2-0.ancient": "[sine]...I.. can’t... ..make...\n...you.. forget....[/sine] [jitter][b]UNMIGHTY[/b][/jitter] ORBS!",
+    "AMALGAM-ANCIENT.talk.DEFECT.2-0.next": "Respond",
+    "AMALGAM-ANCIENT.talk.DEFECT.2-1.char": "[i][font_size=22]<resolute but confused beeping>[/font_size][/i]",
+    "AMALGAM-ANCIENT.talk.DEFECT.2-1.next": "Continue",
+    "AMALGAM-ANCIENT.talk.DEFECT.2-2.ancient": "[sine]...good....[/sine] [thinky_dots]sleep now...[/thinky_dots]",
+
+    "AMALGAM-ANCIENT.talk.IRONCLAD.0-0.ancient": "[sine]..arise.. my.. warrior...[/sine] SUCH BEAUTIFUL RAGE!! [thinky_dots]take my flesh and...[/thinky_dots] [jitter][b]slaughter[/b][/jitter]!!",
+    "AMALGAM-ANCIENT.talk.IRONCLAD.1-0r.ancient": "CONTRACT SIGNER!! [sine]..still.. lost.. to rage...[/sine] [thinky_dots]let me help you sleep...[/thinky_dots]",
+    "AMALGAM-ANCIENT.talk.IRONCLAD.2-0.ancient": "MIGHTY FIGHTER!! [sine]..remember.. the.. first..time...[/sine] [jitter][b]kill him quickly[/b][/jitter]...",
+    "AMALGAM-ANCIENT.talk.IRONCLAD.2-0.next": "Fight",
+    "AMALGAM-ANCIENT.talk.IRONCLAD.2-1.char": "[i][font_size=22]The Ironclad unleashes his fury upon the Amalgam.[/font_size][/i]",
+    "AMALGAM-ANCIENT.talk.IRONCLAD.2-1.next": "Continue",
+    "AMALGAM-ANCIENT.talk.IRONCLAD.2-2.ancient": "[sine]...so..useful...[/sine] YEEES!! TAKE WEAPON!!",
+
+    "AMALGAM-ANCIENT.talk.NECROBINDER.0-0.ancient": "[sine]...we.... share... ..the same... ..goal....[/sine] WHAT A MIGHTY SCYTHE!!",
+    "AMALGAM-ANCIENT.talk.NECROBINDER.0-0.next": "Talk",
+    "AMALGAM-ANCIENT.talk.NECROBINDER.0-1.char": "I seek vengeance. Will you help me or get in my way?",
+    "AMALGAM-ANCIENT.talk.NECROBINDER.0-1.next": "Continue",
+    "AMALGAM-ANCIENT.talk.NECROBINDER.0-2.ancient": "[jitter][b]Wonderful[/b][/jitter]!! [thinky_dots]The one with the Hand returns...[/thinky_dots] VIOLENCE BAD!!",
+    "AMALGAM-ANCIENT.talk.NECROBINDER.1-0r.ancient": "[sine]He... still.. ....breathes...[/sine] FIGHT ME, OSTY!! [jitter][b]Treats for the skeleton![/b][/jitter]",
+    "AMALGAM-ANCIENT.talk.NECROBINDER.2-0.ancient": "[thinky_dots]Killing [red]Father[/red] won't bring peace...[/thinky_dots] [sine]... [red]Architect[/red].... ..weakening....[/sine]",
+    "AMALGAM-ANCIENT.talk.NECROBINDER.2-0.next": "Respond",
+    "AMALGAM-ANCIENT.talk.NECROBINDER.2-1.char": "I don't want peace. I want him gone.",
+    "AMALGAM-ANCIENT.talk.NECROBINDER.2-1.next": "Continue",
+    "AMALGAM-ANCIENT.talk.NECROBINDER.2-2.ancient": "[jitter][b]I know who wrote that book[/b][/jitter]... [sine]...my power..... is yours...[/sine]",
+
+    "AMALGAM-ANCIENT.talk.REGENT.0-0.char": "Behold, I am the Regent! Why are you so... many things at once?",
+    "AMALGAM-ANCIENT.talk.REGENT.0-0.next": "Continue",
+    "AMALGAM-ANCIENT.talk.REGENT.0-1.ancient": "ORANGE KING!! [sine]..cute...[/sine] [thinky_dots]Quiet down now...[/thinky_dots] [jitter][b]Exotic visitor![/b][/jitter]",
+    "AMALGAM-ANCIENT.talk.REGENT.1-0r.ancient": "[sine]...again..?[/sine] SERVANTS! FETCH MORE STORIES!!",
+    "AMALGAM-ANCIENT.talk.REGENT.2-0.char": "I demand a blessing befitting my status!",
+    "AMALGAM-ANCIENT.talk.REGENT.2-0.next": "Continue",
+    "AMALGAM-ANCIENT.talk.REGENT.2-1.ancient": "[sine]...receive.. this... ..blessing...[/sine] [jitter][b]regal boy[/b][/jitter]... FIGHT ME AGAIN!!",
+    "AMALGAM-ANCIENT.talk.REGENT.2-1.next": "Thank",
+    "AMALGAM-ANCIENT.talk.REGENT.2-2.char": "Yes, yes... thank you, Amalgam-Ancient.",
+
+    "AMALGAM-ANCIENT.talk.SILENT.0-0.ancient": "[sine]...returned.. from... outside?[/sine] A LITTLE THIEF!! [jitter][b]burn[/b][/jitter] away the [jitter]BLIGHT![/jitter]",
+    "AMALGAM-ANCIENT.talk.SILENT.1-0r.ancient": "[sine]...your..\n ...trophy.. awaits...[/sine] [thinky_dots]Trophy hunting? Sure...[/thinky_dots] DAGGERS UNMIGHTY!!",
+    "AMALGAM-ANCIENT.talk.SILENT.2-0.ancient": "[sine]..both...know..agony..of..family...[/sine] WHERE ARE SCARY MEAN SISTERS??",
+    "AMALGAM-ANCIENT.talk.SILENT.2-0.next": "Respond",
+    "AMALGAM-ANCIENT.talk.SILENT.2-1.char": "...",
+    "AMALGAM-ANCIENT.talk.SILENT.2-1.next": "Continue",
+    "AMALGAM-ANCIENT.talk.SILENT.2-2.ancient": "[sine]..still...seeking..approval...?[/sine] [jitter][b]trust[/b][/jitter] me... zZZzz..."
+
+}
