@@ -1,0 +1,60 @@
+[gd_scene load_steps=6 format=3 uid="uid://c7mbnl6dhn56e"]
+
+[ext_resource type="Shader" uid="uid://cqujwojjpya7f" path="res://scenes/events/background_scenes/swirl.gdshader" id="1_xwp4w"]
+[ext_resource type="Texture2D" uid="uid://cd1p3aat6sata" path="res://scenes/events/background_scenes/amalgam_bg.png" id="2_7v40v"]
+[ext_resource type="Texture2D" uid="uid://fxl3afsk58sa" path="res://scenes/events/background_scenes/amalgam_fg.png" id="2_xwp4w"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_01cqi"]
+resource_local_to_scene = true
+shader = ExtResource("1_xwp4w")
+shader_parameter/portal_texture = ExtResource("2_7v40v")
+shader_parameter/portal_tint = Color(1, 1, 1, 1)
+shader_parameter/vortex_effect_radius = 0.9999999776480001
+shader_parameter/twist_strength = 2.0000000298024
+shader_parameter/pulsation_speed = 0.0499999988824
+shader_parameter/breath_magnitude = -1.862652998507741e-08
+shader_parameter/overall_rotation_speed = -4.4704000057294024e-08
+shader_parameter/texture_scroll_speed_x = -0.03000002168144
+shader_parameter/texture_scroll_speed_y = -0.06000002101087998
+shader_parameter/edge_softness = 0.1
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7v40v"]
+resource_local_to_scene = true
+shader = ExtResource("1_xwp4w")
+shader_parameter/portal_texture = ExtResource("2_xwp4w")
+shader_parameter/portal_tint = Color(1, 1, 1, 1)
+shader_parameter/vortex_effect_radius = 0.499999988824
+shader_parameter/twist_strength = 0.70000001043084
+shader_parameter/pulsation_speed = 0.3999999910592
+shader_parameter/breath_magnitude = -1.862652998507741e-08
+shader_parameter/overall_rotation_speed = -4.4704000057294024e-08
+shader_parameter/texture_scroll_speed_x = 0.01999997720096003
+shader_parameter/texture_scroll_speed_y = 0.00999997742448011
+shader_parameter/edge_softness = 0.1999999955296
+
+[node name="Amalgam" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 768.0
+offset_bottom = 432.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_lock_ = true
+
+[node name="Bg" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_01cqi")
+layout_mode = 0
+offset_left = -329.0
+offset_top = -49.0
+offset_right = 2253.0
+offset_bottom = 1172.0
+
+[node name="Fg" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_7v40v")
+layout_mode = 0
+offset_left = 154.36145
+offset_top = -23.0
+offset_right = 1769.6385
+offset_bottom = 792.0
