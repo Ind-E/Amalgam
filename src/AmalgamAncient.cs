@@ -64,7 +64,7 @@ public class Ancient : CustomAncientModel
         else
             options.Add(FakePaelsEyeOption);
 
-        if (Rng.NextBool())
+        if (Rng.NextBool() && AlphabetSoup.CanSpawn(cards))
             options.Add(AlphabetSoupOption);
         else
             options.Add(JunkDrawerOption);

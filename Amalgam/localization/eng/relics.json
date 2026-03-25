@@ -1,6 +1,7 @@
 {
   "AMALGAM-ALPHABET_SOUP.title": "Alphabet Soup",
-  "AMALGAM-ALPHABET_SOUP.description": "",
+  "AMALGAM-ALPHABET_SOUP.description": "Upon pickup, [gold]Enchant[/gold] all [gold]Strikes[/gold] in your [gold]Deck[/gold] with [purple]Momentum[/purple] [blue]{Momentum}[/blue].",
+  "AMALGAM-ALPHABET_SOUP.eventDescription": "[gold]Enchant[/gold] all [gold]Strikes[/gold] in your [gold]Deck[/gold] with [purple]Momentum[/purple] [blue]{Momentum}[/blue].",
   "AMALGAM-ALPHABET_SOUP.flavor": "",
 
   "AMALGAM-FAKE_PAELS_EYE.title": "Pael's Eye???",
