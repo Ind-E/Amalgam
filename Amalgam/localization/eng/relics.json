@@ -18,8 +18,10 @@
   "AMALGAM-FRAYED_SCARF.flavor": "",
 
   "AMALGAM-JUNK_DRAWER.title": "Junk Drawer",
-  "AMALGAM-JUNK_DRAWER.description": "",
+  "AMALGAM-JUNK_DRAWER.description": "You may sacrifice card rewards to obtain [blue]{Relics}[/blue] [gold]Scrap {Relics:plural:Relic|Relics}[/gold]. Every combat, your left-most [gold]Scrap Relic[/gold] will fall apart.",
   "AMALGAM-JUNK_DRAWER.flavor": "",
+  "AMALGAM-JUNK_DRAWER.scrapRelicPrefix": "Scrap {Title}",
+  "AMALGAM-JUNK_DRAWER.brokenRelicPrefix": "[red]This relic has fallen apart.[/red]\n{description}",
 
   "AMALGAM-OMINOUS_RING.title": "Ominous Ring",
   "AMALGAM-OMINOUS_RING.description": "Upon pickup, gain [blue]{Gold}[/blue] [gold]Gold[/gold]. All shop rooms in this act are replaced by [gold]?[/gold] rooms.",
