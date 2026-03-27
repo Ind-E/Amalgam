@@ -59,7 +59,7 @@ public class Ancient : CustomAncientModel
         else
             options.Add(ParasiticShrympOption);
 
-        if (Rng.NextBool() && cards.Count(c => c.IsRemovable) >= 4)
+        if (Rng.NextBool() && FakePaelsTooth.CanSpawn(cards))
             options.Add(FakePaelsToothOption);
         else
             options.Add(FakePaelsEyeOption);

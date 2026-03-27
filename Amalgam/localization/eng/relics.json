@@ -9,7 +9,8 @@
   "AMALGAM-FAKE_PAELS_EYE.flavor": "",
 
   "AMALGAM-FAKE_PAELS_TOOTH.title": "Pael's Tooth???",
-  "AMALGAM-FAKE_PAELS_TOOTH.description": "",
+  "AMALGAM-FAKE_PAELS_TOOTH.description": "Upon pickup, remove [blue]{Cards}[/blue] {Cards:plural:card|cards} from your [gold]Deck[/gold]. After each combat, randomly add [blue]1[/blue] back [gold]Enchanted[/gold] with [purple]Sharp[/purple] [blue]{SharpAmount}[/blue], [purple]Nimble[/purple] [blue]{NimbleAmount}[/blue], or [purple]Swift[/purple] [blue]{SwiftAmount}[/blue].{CardTitles.StringValue:cond:\n\nCards in the Tooth:\n{}|}",
+  "AMALGAM-FAKE_PAELS_TOOTH.eventDescription": "Remove [blue]{Cards}[/blue] {Cards:plural:card|cards} from your [gold]Deck[/gold]. After each combat, randomly add [blue]1[/blue] back [gold]Enchanted[/gold] with [purple]Sharp[/purple] [blue]{SharpAmount}[/blue], [purple]Nimble[/purple] [blue]{NimbleAmount}[/blue], or [purple]Swift[/purple] [blue]{SwiftAmount}[/blue].{CardTitles.StringValue:cond:\n\nCards in the Tooth:\n{}|}",
   "AMALGAM-FAKE_PAELS_TOOTH.flavor": "",
 
   "AMALGAM-FRAYED_SCARF.title": "Frayed Scarf",
