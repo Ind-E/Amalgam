@@ -38,20 +38,24 @@ public class CollectRestSiteOption : RestSiteOption
 
     public override async Task<bool> OnSelect()
     {
-        IEnumerable<CardModel> enumerable = base
-            .Owner.Deck.Cards.Where((CardModel c) => c.Enchantment is Scattered)
-            .ToList();
+        IEnumerable<CardModel> enumerable =
+        [
+            .. Owner.Deck.Cards.Where(c => c.Enchantment is Scattered),
+        ];
 
         NRun.Instance?.GlobalUi.GridCardPreviewContainer.ForceMaxColumnsUntilEmpty(3);
         foreach (CardModel item in enumerable)
         {
             CardCmd.Upgrade(item, CardPreviewStyle.GridLayout);
         }
-        Owner.GetRelic<SandPile>().UsedUp = true;
+        if (Owner.GetRelic<SandPile>() is SandPile sandPile)
+        {
+            sandPile.UsedUp = true;
+        }
         return true;
     }
 
-    public override Task DoLocalPostSelectVfx(CancellationToken ct = default(CancellationToken))
+    public override Task DoLocalPostSelectVfx(CancellationToken ct = default)
     {
         NGame.Instance?.ScreenShake(ShakeStrength.Weak, ShakeDuration.Normal);
         return Task.CompletedTask;
@@ -59,17 +63,21 @@ public class CollectRestSiteOption : RestSiteOption
 
     public override Task DoRemotePostSelectVfx()
     {
-        NRestSiteCharacter nRestSiteCharacter = NRestSiteRoom.Instance?.Characters.First(
-            (NRestSiteCharacter c) => c.Player == base.Owner
-        );
-        nRestSiteCharacter?.Shake();
-        NRelicFlashVfx nRelicFlashVfx = NRelicFlashVfx.Create(ModelDb.Relic<SandPile>());
-        if (nRelicFlashVfx == null)
+        if (
+            NRestSiteRoom.Instance?.Characters.FirstOrDefault(c => c.Player == Owner)
+            is not NRestSiteCharacter restSiteCharacter
+        )
         {
             return Task.CompletedTask;
         }
-        nRestSiteCharacter?.AddChildSafely(nRelicFlashVfx);
-        nRelicFlashVfx.Position = Vector2.Zero;
+
+        restSiteCharacter.Shake();
+
+        if (NRelicFlashVfx.Create(ModelDb.Relic<SandPile>()) is not NRelicFlashVfx relicFlashVfx)
+            return Task.CompletedTask;
+
+        relicFlashVfx.Position = Vector2.Zero;
+        restSiteCharacter.AddChildSafely(relicFlashVfx);
         return Task.CompletedTask;
     }
 }

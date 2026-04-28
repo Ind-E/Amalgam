@@ -29,7 +29,7 @@ public class JunkDrawer : CustomRelicModel
 
     private const string _relicsKey = "Relics";
 
-    public override IEnumerable<DynamicVar> CanonicalVars => [new DynamicVar(_relicsKey, 2)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DynamicVar(_relicsKey, 2)];
 
     public override bool TryModifyCardRewardAlternatives(
         Player player,

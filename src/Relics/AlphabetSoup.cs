@@ -21,9 +21,9 @@ public class AlphabetSoup : CustomRelicModel
 
     private const string _momentumKey = "Momentum";
 
-    public override IEnumerable<DynamicVar> CanonicalVars => [new DynamicVar(_momentumKey, 8m)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DynamicVar(_momentumKey, 8m)];
 
-    public override IEnumerable<IHoverTip> ExtraHoverTips =>
+    protected override IEnumerable<IHoverTip> ExtraHoverTips =>
         HoverTipFactory.FromEnchantment<Momentum>(DynamicVars[_momentumKey].IntValue);
 
     public override Task AfterObtained()

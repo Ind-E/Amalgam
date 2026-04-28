@@ -6,6 +6,7 @@ using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.HoverTips;
+using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Enchantments;
 using MegaCrit.Sts2.Core.Models.RelicPools;
@@ -19,8 +20,10 @@ public class ParasiticShrymp : CustomRelicModel
 
     public override bool HasUponPickupEffect => true;
 
-    public override IEnumerable<IHoverTip> ExtraHoverTips =>
+    protected override IEnumerable<IHoverTip> ExtraHoverTips =>
         HoverTipFactory.FromEnchantment<Imbued>().Append(HoverTipFactory.FromCard<Parasite>());
+
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(2)];
 
     private static bool ImbuedAllTypes;
 
@@ -45,7 +48,7 @@ public class ParasiticShrymp : CustomRelicModel
         ImbuedAllTypes = false;
 
         await CardPileCmd.AddCursesToDeck(
-            [ModelDb.Card<Parasite>(), ModelDb.Card<Parasite>()],
+            Enumerable.Repeat(ModelDb.Card<Parasite>(), DynamicVars.Cards.IntValue),
             Owner
         );
     }

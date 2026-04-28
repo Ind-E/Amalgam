@@ -24,7 +24,7 @@ public class SandPile : CustomRelicModel
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
 
-    public override IEnumerable<IHoverTip> ExtraHoverTips =>
+    protected override IEnumerable<IHoverTip> ExtraHoverTips =>
         HoverTipFactory.FromEnchantment<Scattered>();
 
     private bool _usedUp;
@@ -78,9 +78,9 @@ public class SandPile : CustomRelicModel
         return true;
     }
 
-    public override string PackedIconOutlinePath => "res://Amalgam/relics/sand_pile_outline.png";
+    protected override string PackedIconOutlinePath => "res://Amalgam/relics/sand_pile_outline.png";
     public override string PackedIconPath => "res://Amalgam/relics/sand_pile.png";
-    public override string BigIconPath => "res://Amalgam/relics/sand_pile.png";
+    protected override string BigIconPath => "res://Amalgam/relics/sand_pile.png";
 
     public static bool CanSpawn(IReadOnlyList<CardModel> cards)
     {

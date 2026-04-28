@@ -14,7 +14,7 @@
   "AMALGAM-FAKE_PAELS_TOOTH.flavor": "",
 
   "AMALGAM-FRAYED_SCARF.title": "Frayed Scarf",
-  "AMALGAM-FRAYED_SCARF.description": "The [blue]4th[/blue] card you play each turn costs [blue]1[/blue] less {Energy:energyIcons()} and [gold]Exhausts[/gold].",
+  "AMALGAM-FRAYED_SCARF.description": "The [blue]{Cards}th[/blue] card you play each turn costs [blue]1[/blue] less {Energy:energyIcons()} and [gold]Exhausts[/gold].",
   "AMALGAM-FRAYED_SCARF.flavor": "",
 
   "AMALGAM-JUNK_DRAWER.title": "Junk Drawer",
@@ -28,8 +28,8 @@
   "AMALGAM-OMINOUS_RING.flavor": "",
 
   "AMALGAM-PARASITIC_SHRYMP.title": "Parasitic Shrymp",
-  "AMALGAM-PARASITIC_SHRYMP.description": "Upon pickup, [gold]Enchant[/gold] a card with [purple]Imbued[/purple] and add [blue]2[/blue] [red]Parasites[/red] to your [gold]Deck[/gold].",
-  "AMALGAM-PARASITIC_SHRYMP.eventDescription": "[gold]Enchant[/gold] a card with [purple]Imbued[/purple] and add [blue]2[/blue] [red]Parasites[/red] to your [gold]Deck[/gold].",
+  "AMALGAM-PARASITIC_SHRYMP.description": "Upon pickup, [gold]Enchant[/gold] a card with [purple]Imbued[/purple] and add [blue]{Cards}[/blue] [red]{Cards:plural:Parasite|Parasites[/red] to your [gold]Deck[/gold].",
+  "AMALGAM-PARASITIC_SHRYMP.eventDescription": "[gold]Enchant[/gold] a card with [purple]Imbued[/purple] and add [blue]{Cards}[/blue] [red]Parasites[/red] to your [gold]Deck[/gold].",
   "AMALGAM-PARASITIC_SHRYMP.flavor": "",
 
   "AMALGAM-SAND_PILE.title": "Sand Pile",
@@ -38,14 +38,14 @@
   "AMALGAM-SAND_PILE.flavor": "",
 
   "AMALGAM-TINY_HATCHET.title": "Tiny Hatchet",
-  "AMALGAM-TINY_HATCHET.description": "The [blue]13th[/blue] card you play each combat is played [blue]2[/blue] additional times.",
+  "AMALGAM-TINY_HATCHET.description": "The [blue]{Cards}th[/blue] card you play each combat is played [blue]{Repeat}[/blue] additional times.",
   "AMALGAM-TINY_HATCHET.flavor": "",
 
   "AMALGAM-TUNGSTEN_PAPERWEIGHT.title": "Tungsten Paperweight",
-  "AMALGAM-TUNGSTEN_PAPERWEIGHT.description": "Upon pickup, choose [blue]2[/blue] of [blue]20[/blue] Colorless cards to add to your [gold]Deck[/gold].",
-  "AMALGAM-TUNGSTEN_PAPERWEIGHT.eventDescription": "Choose [blue]2[/blue] of [blue]20[/blue] Colorless cards to add to your [gold]Deck[/gold].",
+  "AMALGAM-TUNGSTEN_PAPERWEIGHT.description": "Upon pickup, choose [blue]{Cards}[/blue] of [blue]{MaxCards}[/blue] Colorless cards to add to your [gold]Deck[/gold].",
+  "AMALGAM-TUNGSTEN_PAPERWEIGHT.eventDescription": "Choose [blue]{Cards}[/blue] of [blue]{MaxCards}[/blue] Colorless cards to add to your [gold]Deck[/gold].",
   "AMALGAM-TUNGSTEN_PAPERWEIGHT.flavor": "",
-  "AMALGAM-TUNGSTEN_PAPERWEIGHT.selectionScreenPrompt": "Choose [blue]2[/blue] Colorless Cards to Add to Your [gold]Deck[/gold].",
+  "AMALGAM-TUNGSTEN_PAPERWEIGHT.selectionScreenPrompt": "Choose [blue]{Cards}[/blue] Colorless Cards to Add to Your [gold]Deck[/gold].",
 
   "AMALGAM-WORN_CLEAVER.title": "Worn Cleaver",
   "AMALGAM-WORN_CLEAVER.description": "You may [gold]Pare[/gold] at Rest Sites.",

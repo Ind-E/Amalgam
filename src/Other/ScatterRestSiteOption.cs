@@ -18,7 +18,7 @@ using MegaCrit.Sts2.Core.Nodes.Vfx.Utilities;
 
 namespace Amalgam.Other;
 
-public class ScatterRestSiteOption : RestSiteOption
+public class ScatterRestSiteOption(Player owner) : RestSiteOption(owner)
 {
     public override string OptionId => "AMALGAM-SCATTER";
 
@@ -35,14 +35,12 @@ public class ScatterRestSiteOption : RestSiteOption
         }
     }
 
-    public ScatterRestSiteOption(Player owner)
-        : base(owner) { }
-
     public override async Task<bool> OnSelect()
     {
-        IReadOnlyList<CardModel> cards = Owner
-            .Deck.Cards.Where((CardModel c) => c.Enchantment is Scattered)
-            .ToList();
+        IReadOnlyList<CardModel> cards =
+        [
+            .. Owner.Deck.Cards.Where(c => c.Enchantment is Scattered),
+        ];
 
         RemoveFromDeckUsesGridLayoutPatch.RemoveFromDeckUsesGridContainer = true;
         NRun.Instance?.GlobalUi.GridCardPreviewContainer.ForceMaxColumnsUntilEmpty(3);
@@ -71,9 +69,7 @@ public class ScatterRestSiteOption : RestSiteOption
         }
 
         [HarmonyTranspiler]
-        private static IEnumerable<CodeInstruction> Transpiler(
-            IEnumerable<CodeInstruction> instructions
-        )
+        static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
         {
             var codeMatcher = new CodeMatcher(instructions);
 
@@ -96,7 +92,7 @@ public class ScatterRestSiteOption : RestSiteOption
         }
     }
 
-    public override Task DoLocalPostSelectVfx(CancellationToken ct = default(CancellationToken))
+    public override Task DoLocalPostSelectVfx(CancellationToken ct = default)
     {
         NGame.Instance?.ScreenShake(ShakeStrength.Strong, ShakeDuration.Short);
         return Task.CompletedTask;
@@ -104,8 +100,8 @@ public class ScatterRestSiteOption : RestSiteOption
 
     public override Task DoRemotePostSelectVfx()
     {
-        NRestSiteCharacter nRestSiteCharacter = NRestSiteRoom.Instance?.Characters.First(
-            (NRestSiteCharacter c) => c.Player == Owner
+        NRestSiteCharacter nRestSiteCharacter = NRestSiteRoom.Instance?.Characters.First(c =>
+            c.Player == Owner
         )!;
         nRestSiteCharacter?.Shake();
         var nRelicFlashVfx = NRelicFlashVfx.Create(ModelDb.Relic<SandPile>());

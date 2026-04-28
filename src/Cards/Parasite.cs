@@ -16,7 +16,7 @@ public class Parasite() : CustomCardModel(-1, CardType.Curse, CardRarity.Curse, 
     public override int MaxUpgradeLevel => 0;
 
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Unplayable];
-    public override IEnumerable<DynamicVar> CanonicalVars => [new MaxHpVar(3)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new MaxHpVar(3)];
 
     public override async Task BeforeCardRemoved(CardModel card)
     {

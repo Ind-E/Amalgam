@@ -13,7 +13,7 @@ public sealed class PareRestSiteOption : RestSiteOption
 {
     private const int _cardsToRemove = 2;
 
-    private const int _maxHpLose = 6;
+    private const int _maxHpLoss = 5;
 
     public override string OptionId => "AMALGAM-PARE";
 
@@ -23,12 +23,9 @@ public sealed class PareRestSiteOption : RestSiteOption
         {
             if (IsEnabled)
             {
-                LocString locString = new LocString(
-                    "rest_site_ui",
-                    "OPTION_" + OptionId + ".description"
-                );
+                LocString locString = new("rest_site_ui", "OPTION_" + OptionId + ".description");
                 locString.Add("Cards", _cardsToRemove);
-                locString.Add("MaxHp", _maxHpLose);
+                locString.Add("MaxHp", _maxHpLoss);
                 return locString;
             }
             return new LocString("rest_site_ui", "OPTION_" + OptionId + ".descriptionDisabled");
@@ -66,7 +63,7 @@ public sealed class PareRestSiteOption : RestSiteOption
         await CreatureCmd.LoseMaxHp(
             new ThrowingPlayerChoiceContext(),
             Owner.Creature,
-            _maxHpLose,
+            _maxHpLoss,
             false
         );
         return true;

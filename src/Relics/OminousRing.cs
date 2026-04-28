@@ -17,7 +17,7 @@ public class OminousRing : CustomRelicModel
 
     public override bool HasUponPickupEffect => true;
 
-    public override IEnumerable<DynamicVar> CanonicalVars => [new GoldVar(666)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new GoldVar(666)];
 
     private int _actPickedUp;
 

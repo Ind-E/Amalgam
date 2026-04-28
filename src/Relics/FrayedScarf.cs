@@ -31,12 +31,12 @@ public class FrayedScarf : CustomRelicModel
         }
     }
 
-    public override IEnumerable<IHoverTip> ExtraHoverTips =>
+    protected override IEnumerable<IHoverTip> ExtraHoverTips =>
         [HoverTipFactory.FromKeyword(CardKeyword.Exhaust)];
 
     public override int DisplayAmount => CardsPlayedThisTurn;
 
-    public override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(4), new EnergyVar(1)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(4), new EnergyVar(1)];
 
     private int CardsPlayedThisTurn
     {
@@ -75,7 +75,7 @@ public class FrayedScarf : CustomRelicModel
     public override Task BeforeSideTurnStart(
         PlayerChoiceContext choiceContext,
         CombatSide side,
-        CombatState combatState
+        ICombatState combatState
     )
     {
         if (side == Owner.Creature.Side)
@@ -128,3 +128,4 @@ public class FrayedScarf : CustomRelicModel
         return Task.CompletedTask;
     }
 }
+

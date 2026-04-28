@@ -35,7 +35,7 @@ public class FakePaelsTooth : CustomRelicModel
 
     public override bool HasUponPickupEffect => true;
 
-    public override IEnumerable<DynamicVar> CanonicalVars =>
+    protected override IEnumerable<DynamicVar> CanonicalVars =>
         [
             new CardsVar(Cards),
             new StringVar(_cardTitlesKey),
@@ -44,7 +44,7 @@ public class FakePaelsTooth : CustomRelicModel
             new DynamicVar(_swiftKey, 2),
         ];
 
-    public override IEnumerable<IHoverTip> ExtraHoverTips =>
+    protected override IEnumerable<IHoverTip> ExtraHoverTips =>
         new[]
         {
             HoverTipFactory.FromEnchantment<Sharp>(DynamicVars[_sharpKey].IntValue),
@@ -65,7 +65,7 @@ public class FakePaelsTooth : CustomRelicModel
         }
     }
 
-    public override void AfterCloned()
+    protected override void AfterCloned()
     {
         base.AfterCloned();
         _serializableCards = [];

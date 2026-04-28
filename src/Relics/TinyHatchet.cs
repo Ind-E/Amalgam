@@ -17,7 +17,7 @@ public class TinyHatchet : CustomRelicModel
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
 
-    public override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(13)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(13), new RepeatVar(2)];
 
     private bool UsedThisCombat
     {
@@ -85,7 +85,7 @@ public class TinyHatchet : CustomRelicModel
         {
             return playCount;
         }
-        return playCount + 2;
+        return playCount + DynamicVars.Repeat.IntValue;
     }
 
     public override Task AfterModifyingCardPlayCount(CardModel card)

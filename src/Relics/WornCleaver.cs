@@ -17,7 +17,7 @@ public class WornCleaver : CustomRelicModel
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
 
-    public override IEnumerable<IHoverTip> ExtraHoverTips => [StaticTip("AmalgamPare")];
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [StaticTip("AmalgamPare")];
 
     public override bool TryModifyRestSiteOptions(
         Player player,

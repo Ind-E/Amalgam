@@ -17,7 +17,7 @@ public class FakePaelsEye : CustomRelicModel
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
 
-    public override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(2)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(2)];
 
     private bool _anyCardsPlayedThisTurn;
 
@@ -59,7 +59,7 @@ public class FakePaelsEye : CustomRelicModel
         return Task.CompletedTask;
     }
 
-    public override Task AfterSideTurnStart(CombatSide side, CombatState combatState)
+    public override Task AfterSideTurnStart(CombatSide side, ICombatState combatState)
     {
         if (side != Owner.Creature.Side || UsedThisCombat)
         {
@@ -78,6 +78,7 @@ public class FakePaelsEye : CustomRelicModel
         }
 
         await PowerCmd.Apply<ImprovementPower>(
+            choiceContext,
             Owner.Creature,
             DynamicVars.Cards.BaseValue,
             Owner.Creature,
