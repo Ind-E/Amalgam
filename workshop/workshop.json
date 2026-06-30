@@ -1,0 +1,8 @@
+﻿{
+  "title": "Amalgam",
+  "description": "Template for new STS2 mods.",
+  "visibility": "public",
+  "changeNote": "None",
+  "tags": [],
+  "dependencies": [ "BaseLib" ]
+}
