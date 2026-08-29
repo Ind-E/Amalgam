@@ -86,19 +86,18 @@ public class FrayedScarf : AmalgamRelic
         return Task.CompletedTask;
     }
 
-    public override (PileType, CardPilePosition) ModifyCardPlayResultPileTypeAndPosition(
+    public override CardLocation ModifyCardPlayResultLocation(
         CardModel card,
         bool isAutoPlay,
         ResourceInfo resources,
-        PileType pileType,
-        CardPilePosition position
+        CardLocation cardLocation
     )
     {
         if (ShouldModifyCost(card) && !isAutoPlay)
         {
-            return (PileType.Exhaust, position);
+            return new CardLocation(cardLocation.player, PileType.Exhaust, cardLocation.position);
         }
-        return (pileType, position);
+        return cardLocation;
     }
 
     private bool ShouldModifyCost(CardModel card)
