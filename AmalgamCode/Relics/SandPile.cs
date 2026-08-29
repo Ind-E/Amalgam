@@ -8,6 +8,7 @@ using MegaCrit.Sts2.Core.Entities.RestSite;
 using MegaCrit.Sts2.Core.Extensions;
 using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.HoverTips;
+using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Enchantments;
 using MegaCrit.Sts2.Core.Nodes;
@@ -19,6 +20,10 @@ namespace Amalgam.AmalgamCode.Relics;
 public class SandPile : AmalgamRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
+
+    private const int cardsCount = 6;
+
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(cardsCount)];
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
         HoverTipFactory.FromEnchantment<Scattered>();
@@ -49,7 +54,7 @@ public class SandPile : AmalgamRelic
             .Cards.Where(card => card.IsUpgradable && card.Enchantment is null)
             .ToList()
             .StableShuffle(Owner.RunState.Rng.Niche)
-            .Take(6);
+            .Take(DynamicVars.Cards.IntValue);
         NRun.Instance?.GlobalUi.GridCardPreviewContainer.ForceMaxColumnsUntilEmpty(3);
         foreach (CardModel card in enumerable)
         {
@@ -77,6 +82,6 @@ public class SandPile : AmalgamRelic
     public static bool CanSpawn(IReadOnlyList<CardModel> cards)
     {
         // use Swift because it has no override for CanEnchant. Can't use Imbued because it only allows skills by default
-        return cards.Count(c => ModelDb.Enchantment<Swift>().CanEnchant(c)) >= 6;
+        return cards.Count(c => ModelDb.Enchantment<Swift>().CanEnchant(c)) >= cardsCount;
     }
 }

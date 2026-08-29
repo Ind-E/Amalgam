@@ -14,7 +14,6 @@ using MegaCrit.Sts2.Core.Saves.Runs;
 
 namespace Amalgam.AmalgamCode.Relics;
 
-[Pool(typeof(EventRelicPool))]
 public class FakePaelsTooth : AmalgamRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
@@ -38,7 +37,7 @@ public class FakePaelsTooth : AmalgamRelic
         [
             new CardsVar(Cards),
             new StringVar(_cardTitlesKey),
-            new DynamicVar(_sharpKey, 3),
+            new DynamicVar(_sharpKey, 4),
             new DynamicVar(_nimbleKey, 3),
             new DynamicVar(_swiftKey, 2),
         ];

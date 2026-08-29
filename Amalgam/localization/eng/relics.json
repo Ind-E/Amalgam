@@ -33,8 +33,8 @@
   "AMALGAM-PARASITIC_SHRYMP.flavor": "",
 
   "AMALGAM-SAND_PILE.title": "Sand Pile",
-  "AMALGAM-SAND_PILE.description": "Upon pickup, [gold]Enchant[/gold] [blue]6[/blue] random cards with [purple]Scattered[/purple].",
-  "AMALGAM-SAND_PILE.eventDescription": "[gold]Enchant[/gold] [blue]6[/blue] random cards with [purple]Scattered[/purple].",
+  "AMALGAM-SAND_PILE.description": "Upon pickup, [gold]Enchant[/gold] [blue]{Cards}[/blue] random cards with [purple]Scattered[/purple].",
+  "AMALGAM-SAND_PILE.eventDescription": "[gold]Enchant[/gold] [blue]{Cards}[/blue] random cards with [purple]Scattered[/purple].",
   "AMALGAM-SAND_PILE.flavor": "",
 
   "AMALGAM-TINY_HATCHET.title": "Tiny Hatchet",

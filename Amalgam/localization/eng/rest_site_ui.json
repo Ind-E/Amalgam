@@ -1,11 +1,9 @@
 {
    "OPTION_SCATTER.name": "Scatter",
    "OPTION_SCATTER.description": "[gold]Remove[/gold] all cards enchanted with [gold]{EnchantmentName}[/gold].",
-
    "OPTION_COLLECT.name": "Collect",
    "OPTION_COLLECT.description": "[gold]Upgrade[/gold] all cards enchanted with [gold]{EnchantmentName}[/gold].",
-
    "OPTION_PARE.name": "Pare",
    "OPTION_PARE.description": "[gold]Remove[/gold] [blue]{Cards}[/blue] cards from your [gold]Deck[/gold] and lose [red]{MaxHp}[/red] Max HP.",
-   "OPTION_PARE.descriptionDisabled": "[red]You need at least 2 removable cards in your Deck.[/red]"
+   "OPTION_PARE.descriptionDisabled": "[red]You need at least {Cards} removable {Cards:plural:card|cards} in your Deck.[/red]"
 }

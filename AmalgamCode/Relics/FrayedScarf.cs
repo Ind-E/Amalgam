@@ -12,7 +12,6 @@ using MegaCrit.Sts2.Core.Rooms;
 
 namespace Amalgam.AmalgamCode.Relics;
 
-[Pool(typeof(EventRelicPool))]
 public class FrayedScarf : AmalgamRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;

@@ -27,7 +27,15 @@ public sealed class PareRestSiteOption(Player owner) : AmalgamRestSiteOption(own
                 locString.Add("MaxHp", _maxHpLoss);
                 return locString;
             }
-            return new LocString("rest_site_ui", "OPTION_" + OptionId + ".descriptionDisabled");
+            else
+            {
+                LocString locString = new(
+                    "rest_site_ui",
+                    "OPTION_" + OptionId + ".descriptionDisabled"
+                );
+                locString.Add("Cards", _cardsToRemove);
+                return locString;
+            }
         }
     }
 

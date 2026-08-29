@@ -13,7 +13,6 @@ using MegaCrit.Sts2.Core.Nodes.Vfx;
 
 namespace Amalgam.AmalgamCode.Relics;
 
-[Pool(typeof(EventRelicPool))]
 public class AlphabetSoup : AmalgamRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;

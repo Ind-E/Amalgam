@@ -12,7 +12,6 @@ using MegaCrit.Sts2.Core.Rooms;
 
 namespace Amalgam.AmalgamCode.Relics;
 
-[Pool(typeof(EventRelicPool))]
 public class FakePaelsEye : AmalgamRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
