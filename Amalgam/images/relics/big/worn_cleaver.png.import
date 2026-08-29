@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://biutmdujllvvk"
-path="res://.godot/imported/card.png-816100a0aeeabdddea4f79d5507a039f.ctex"
+uid="uid://c61ug8lqyrqyd"
+path="res://.godot/imported/worn_cleaver.png-eed7ea49b1c6d239f3e918af1752c099.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Amalgam/images/card_portraits/card.png"
-dest_files=["res://.godot/imported/card.png-816100a0aeeabdddea4f79d5507a039f.ctex"]
+source_file="res://Amalgam/images/relics/big/worn_cleaver.png"
+dest_files=["res://.godot/imported/worn_cleaver.png-eed7ea49b1c6d239f3e918af1752c099.ctex"]
 
 [params]
 

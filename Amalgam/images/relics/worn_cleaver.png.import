@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://gcyuat0v2ryc"
-path="res://.godot/imported/sand_pile.png-0b6e9ad1c5c504d7373ec3a4c2e9c5ec.ctex"
+uid="uid://dqbc37crxqpbr"
+path="res://.godot/imported/worn_cleaver.png-05ca5fefa5b0b1a5cddd9f393b34dee6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Amalgam/images/relics/big/sand_pile.png"
-dest_files=["res://.godot/imported/sand_pile.png-0b6e9ad1c5c504d7373ec3a4c2e9c5ec.ctex"]
+source_file="res://Amalgam/images/relics/worn_cleaver.png"
+dest_files=["res://.godot/imported/worn_cleaver.png-05ca5fefa5b0b1a5cddd9f393b34dee6.ctex"]
 
 [params]
 

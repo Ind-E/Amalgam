@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dd3t628qhay4j"
-path="res://.godot/imported/tungsten_paperweight.png-ed25a9cc7c7c83b42df18311119da20c.ctex"
+uid="uid://ckl26dfhytk1n"
+path="res://.godot/imported/worn_cleaver_outline.png-88a2add2063bcf12919b91642d97a12b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Amalgam/images/relics/tungsten_paperweight.png"
-dest_files=["res://.godot/imported/tungsten_paperweight.png-ed25a9cc7c7c83b42df18311119da20c.ctex"]
+source_file="res://Amalgam/images/relics/worn_cleaver_outline.png"
+dest_files=["res://.godot/imported/worn_cleaver_outline.png-88a2add2063bcf12919b91642d97a12b.ctex"]
 
 [params]
 
